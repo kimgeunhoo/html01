@@ -1,0 +1,51 @@
+body {
+    font-family: "맑은 고딕", "고딕", "굴림";
+    
+}
+
+header {
+    background-color: rgb(202, 231, 255); /* 배경 색상 */
+    width: 80%; /* 너비 조절 */
+    /* 좌우 정렬 */
+    margin-right: auto;
+    margin-left: auto; 
+    /* 상자 위 오른 왼 방향 증가 */
+    padding: 10px;
+    overflow: hidden;
+    /* padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px; */
+    /* padding: 10px 20px 50px 60px; */
+    
+}
+
+h1 {
+    font-size: 2em;
+    float: left;
+}
+/* header의 자손인 h1 태그에 적용 header > h1 가능 */
+/* 조상 _ 자손 header h1 부모 > 자손 header > h1 */
+header h1 {
+    width: 40%;
+    color: rgb(255, 255, 255);
+}
+/* header의 자식인 nav에 적용 */
+header > nav {
+    width: 50%;
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+    margin: 15px;
+}
+
+a { /* nav a    or    nav ul li a */
+    text-decoration: none;
+    color: white;
+}
