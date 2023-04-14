@@ -8,19 +8,46 @@
 
         <link rel="stylesheet" type="text/css" href="layout.css">
         
+        <style>
+            article {
+                /* background-color: rgb(183, 183, 253); */
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+                margin: 20px 0px 20px 0px;
+            }
+
+            #com1 {
+                border: 2px solid black; /* 실선 solid 점선 dotted 이중실선 double */
+                border-radius: 10px;
+            }
+
+            #com2 {
+                border: 5px dotted green;
+                border-radius: 20px;
+            }
+
+            #com3 {
+                border: 7px double yellow;
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+            }
+
+        </style>
     </head>
     <body>
         <!-- 로고, 메뉴 영역 -->
         <header>
             <h1>컴퓨터공학부</h1>
             <!-- 메뉴 -->
-            <nav>
+            <nav>  <!-- 책갈피 기능 중복 X -->
                 <ul>
-                    <li><a href="">학과 소개</a></li>
-                    <li><a href="">컴퓨터공학전공</a></li>
-                    <li><a href="">메타버스전공</a></li>
-                    <li><a href="">교육 목표</a></li>
-                </ul>
+                    <li><a href="#com1">학과 소개</a></li>
+                    <li><a href="#com2">컴퓨터공학전공</a></li>
+                    <li><a href="#com3">메타버스전공</a></li>
+                    <li><a href="#com4">교육 목표</a></li>
+                </ul>  
             </nav>
         </header>
 
@@ -28,7 +55,7 @@
         <section>
             
             <!-- 학부 소개 컨텐츠 내용 영역 -->
-            <article>
+            <article id="com1">
                 <h2>학부 소개</h2>
                 <p>
                     본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
@@ -42,7 +69,7 @@
             </article>
             
             <!-- 컴퓨터공학전공 소개 컨텐츠 내용 영역 -->
-            <article>
+            <article id="com2">
                 <h2>컴퓨터공학전공</h2>     
                 <h3>소개</h3>
                 <p>
@@ -66,7 +93,7 @@
             </article>
 
             <!-- 메타버스전공 소개 컨텐츠 내용 영역 -->
-            <article>
+            <article id="com3">
                 <h2>메타버스전공</h2>     
                 <h3>소개</h3>
                 프로그램 코딩 주제의 기초 교육과정과 메타버스 콘텐츠 제작 주제의 심화 교육과정을 통해 
@@ -88,13 +115,13 @@
             </article>
             
             <!-- 교육 목표 컨텐츠 내용 영역 -->
-            <article>
+            <article id="com4">
                 <h2>교육 목표</h2>
                 <p>
                     <ul>
                         <li>아름다운 인격을 갖춘, 4차 산업혁명을 선도할 소프트웨어 개발 인재를 양성한다.</li>
                         <ol>
-                            <li>주어진 문제를 체계화하고 창의적으로 해결할 수 있는 문제 해결 능력을 함양한다.</li>
+                            <li>주어진   문제를 체계화하고 창의적으로 해결할 수 있는 문제 해결 능력을 함양한다.</li>
                             <li>자신의 아이디어를 체계화하여 설득력있게 표현할 수 있는 표현 능력을 배양한다.</li>
                             <li>새로운 IT기술을 신속하게 습득하고 변화에 적응하는 도전 정신을 배양한다.</li>
                             <li>공동의 목적을 달성하기 위하여 협력할 수 있는 팀워크 능력을 배양한다.</li>

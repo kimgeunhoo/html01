@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: rgb(202, 231, 255); /* 배경 색상 */
+    background-color: rgb(91, 185, 82); /* 배경 색상 */
     width: 80%; /* 너비 조절 */
     /* 좌우 정렬 */
     margin-right: auto;
@@ -31,7 +31,7 @@ header h1 {
 }
 /* header의 자식인 nav에 적용 */
 header > nav {
-    width: 50%;
+    width: 60%;
     float: right;
 }
 
@@ -48,4 +48,64 @@ nav ul li {
 a { /* nav a    or    nav ul li a */
     text-decoration: none;
     color: white;
+} 
+
+section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #333;
+    /*border-width: 80%;*/ /* 두께 */
+    /*border-style: groove;*/ /* 스타일 */
+    /*border-color: #333;*/
+    padding: 5px; /* 안쪽 여백 */
+}
+
+h2 {
+    font-size: 1.8em;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: -3px 3px 3px 0px gray; /* x좌표 Y좌표 번짐 흐림 */
+}
+
+h3 {
+    font-size: 1.3em;
+    padding: 15px 0px 15px 10px; /*위 오른 아래 왼*/
+    border-left: 8px solid pink;
+    /* box-shadow: -10px 0px 0px 0px purple; 의도치 않은 응용 */ 
+}
+
+p {
+    line-height: 30px;
+    font-size: 15px;
+    margin: 20px;
+}
+
+dl {
+    line-height: 30px;
+    padding-left: 30px;
+    margin-right: 30px;
+}
+
+dt {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(103, 186, 186);
+}
+article ul {
+    line-height: 30px;
+}
+
+footer {
+    background-color: #333;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 14px;   
 }
