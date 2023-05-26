@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transition 1 - 김근호</title>
+        <style>
+            div {
+                width: 200px;
+                height: 200px;
+                float: left;
+                margin: 30px;
+            }
+            
+            .bg-tr {
+                background-color: rgb(255, 127, 127);
+                transition: all ease 1.5s;
+            }
+            .bg-tr:hover {
+                background-color: greenyellow;
+            }
+
+            .border-tr {
+                background-color: rgb(133, 160, 249);
+                border: 3px solid black;
+                transition: all linear 1.5s;
+            }
+            .border-tr:hover {
+                border: 30x solid goldenrod;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg-tr"></div>
+        <div class="border-tr"></div>
+    </body>
+</html>
