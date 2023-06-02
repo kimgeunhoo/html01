@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>애니메이션2 - 김근호</title>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin: 50px;
+            }
+
+            #box1 {
+                background-color: goldenrod;
+                animation-name: change-shape;
+                animation-duration: 3s;
+            }
+
+            #box2 {
+                background-color: blueviolet;
+                animation-name: rotate;
+                animation-duration: 5s;
+            }
+
+            @keyframes change-shape {
+                from {
+                    background-color: goldenrod;
+                    border: 1px solid gray;
+                }
+
+                to {
+                    background-color: rgb(173, 246, 201);
+                    border: 1px solid rgb(193, 230, 255);
+                    border-radius: 50%;
+                }
+            }
+
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(45deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </body>
+</html>
